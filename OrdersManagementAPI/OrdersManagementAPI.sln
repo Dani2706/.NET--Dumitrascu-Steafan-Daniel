@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrdersManagementAPI", "OrdersManagementAPI\OrdersManagementAPI.csproj", "{BB82A5EE-6AAC-4105-866C-50A1B6A2B93F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrdersManagementAPI.Test", "OrdersManagementAPI.Test\OrdersManagementAPI.Test.csproj", "{36EC26F0-3920-49B8-9016-22CECC3E6B20}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{BB82A5EE-6AAC-4105-866C-50A1B6A2B93F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BB82A5EE-6AAC-4105-866C-50A1B6A2B93F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BB82A5EE-6AAC-4105-866C-50A1B6A2B93F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36EC26F0-3920-49B8-9016-22CECC3E6B20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36EC26F0-3920-49B8-9016-22CECC3E6B20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36EC26F0-3920-49B8-9016-22CECC3E6B20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36EC26F0-3920-49B8-9016-22CECC3E6B20}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

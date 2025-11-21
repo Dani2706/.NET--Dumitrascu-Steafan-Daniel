@@ -18,6 +18,10 @@ public class AdvancedOrderMappingProfile : Profile
             .ForMember(dest => dest.UpdatedAt, opt => opt.Ignore());
 
         CreateMap<Order, OrderProfileDto>()
-            .ForMember(dest => dest.CategoryDisplayName, opt => opt.MapFrom<CategoryDisplayNameResolver>());
+            .ForMember(dest => dest.CategoryDisplayName, opt => opt.MapFrom<CategoryDisplayNameResolver>())
+            .ForMember(dest => dest.FormattedPrice, opt => opt.MapFrom<PriceFormatterResolver>())
+            .ForMember(dest => dest.PublishedAge, opt => opt.MapFrom<PublishedAgeResolver>())
+            .ForMember(dest => dest.AvailabilityStatus, opt => opt.MapFrom<AvailabilityStatusResolver>())
+            .ForMember(dest => dest.AuthorInitials, opt => opt.MapFrom<AuthorInitialsResolver>());
     }
 }
