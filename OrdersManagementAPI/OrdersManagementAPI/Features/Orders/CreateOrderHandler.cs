@@ -104,7 +104,7 @@ public class CreateOrderHandler(
             
             LoggingExtensions.LogOrderCreationMetrics(logger, metrics);
 
-            throw e;
+            throw;
         }
     }
 }

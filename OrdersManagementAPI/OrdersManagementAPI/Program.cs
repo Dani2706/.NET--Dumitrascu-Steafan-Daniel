@@ -1,3 +1,4 @@
+using System.Text.Json.Serialization;
 using FluentValidation;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
@@ -8,6 +9,11 @@ using OrdersManagementAPI.Persistence;
 using OrdersManagementAPI.Validators;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.ConfigureHttpJsonOptions(opts =>
+{
+    opts.SerializerOptions.Converters.Add(new JsonStringEnumConverter());
+});
 
 builder.Logging.ClearProviders();
 builder.Logging.AddConsole(options =>

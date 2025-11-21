@@ -23,7 +23,7 @@ public class CreateOrderProfileValidator : AbstractValidator<CreateOrderProfileR
         _childrenRestrictedWords = ["violence", "adult", "gore", "curse"];
         _technicalKeywords =["guide", "reference", "manual", "tutorial", "advanced", "technology", "programming"];
         _inappropriateWords = ["violence", "adult", "gore", "curse"];
-        _imageExtensions = ["jpeg", "png"];
+        _imageExtensions = ["jpeg", "png", "jpg", "gif", "webp"];
         
         RuleFor(x => x.Title)
             .NotEmpty().WithMessage("Title is required.")
@@ -144,15 +144,18 @@ public class CreateOrderProfileValidator : AbstractValidator<CreateOrderProfileR
 
     private bool BeValidImageUrl(string imageUrl)
     {
-        string extension = imageUrl.Substring(imageUrl.LastIndexOf('.'));
-        foreach (var validExtension in _imageExtensions)
+        if (imageUrl.Contains('.'))
         {
-            if (extension.Contains(validExtension))
+            string extension = imageUrl.Substring(imageUrl.LastIndexOf('.'));
+            foreach (var validExtension in _imageExtensions)
             {
-                return true;
+                if (extension.Contains(validExtension))
+                {
+                    return true;
+                }
             }
         }
-        
+
         return false;
     }
     
