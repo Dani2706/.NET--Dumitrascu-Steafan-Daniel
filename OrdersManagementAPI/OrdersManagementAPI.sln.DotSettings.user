@@ -1,12 +1,9 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7020124F_002D9FFC_002D4AC3_002D8F3D_002DAAB8E0240759_002Ff_003AMapper_002Ecs_002Fl_003A_002E_002E_003F_002E_002E_003F_002E_002E_003FAppData_003FRoaming_003FJetBrains_003FRider2025_002E2_003Fresharper_002Dhost_003FDecompilerCache_003Fdecompiler_003F3ac473df69ae4ed5bc93c60d4af4617447400_003Fe0_003F72132ef4_003FMapper_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
 	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7020124F_002D9FFC_002D4AC3_002D8F3D_002DAAB8E0240759_002Ff_003AProfile_002Ecs_002Fl_003A_002E_002E_003F_002E_002E_003F_002E_002E_003FAppData_003FRoaming_003FJetBrains_003FRider2025_002E2_003Fresharper_002Dhost_003FDecompilerCache_003Fdecompiler_003F3ac473df69ae4ed5bc93c60d4af4617447400_003F30_003Fe129d024_003FProfile_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=0a7be2f2_002D51be_002D4c64_002Db93b_002D6be6cd1ea01a/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Handle_ValidTechnicalOrderRequest_CreatesOrderWithCorrectMappings #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
-  &lt;TestAncestor&gt;&#xD;
-    &lt;TestId&gt;xUnit::36EC26F0-3920-49B8-9016-22CECC3E6B20::net9.0::OrdersManagementAPI.Test.CreateOrderHandlerIntegrationTests.Handle_ValidTechnicalOrderRequest_CreatesOrderWithCorrectMappings&lt;/TestId&gt;&#xD;
-  &lt;/TestAncestor&gt;&#xD;
-&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=0a7be2f2_002D51be_002D4c64_002Db93b_002D6be6cd1ea01a/@EntryIndexedValue">JetBrains.ReSharper.UnitTestFramework.Session.Serialization.SessionState</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=359d1c9b_002Dd89c_002D4818_002D9366_002Dd1fb4a7c58a1/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Handle_ValidTechnicalOrderRequest_CreatesOrderWithCorrectMappings" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
-    &lt;TestId&gt;xUnit::36EC26F0-3920-49B8-9016-22CECC3E6B20::net9.0::OrdersManagementAPI.Test.CreateOrderHandlerIntegrationTests.Handle_ValidTechnicalOrderRequest_CreatesOrderWithCorrectMappings&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::36EC26F0-3920-49B8-9016-22CECC3E6B20::net9.0::OrdersManagementAPI.Test.CreateOrderHandlerIntegrationTests&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

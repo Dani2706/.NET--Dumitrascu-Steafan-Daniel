@@ -19,9 +19,11 @@ public class AdvancedOrderMappingProfile : Profile
 
         CreateMap<Order, OrderProfileDto>()
             .ForMember(dest => dest.CategoryDisplayName, opt => opt.MapFrom<CategoryDisplayNameResolver>())
+            .ForMember(dest => dest.Price, opt => opt.MapFrom<PriceResolver>())
             .ForMember(dest => dest.FormattedPrice, opt => opt.MapFrom<PriceFormatterResolver>())
             .ForMember(dest => dest.PublishedAge, opt => opt.MapFrom<PublishedAgeResolver>())
             .ForMember(dest => dest.AvailabilityStatus, opt => opt.MapFrom<AvailabilityStatusResolver>())
-            .ForMember(dest => dest.AuthorInitials, opt => opt.MapFrom<AuthorInitialsResolver>());
+            .ForMember(dest => dest.AuthorInitials, opt => opt.MapFrom<AuthorInitialsResolver>())
+            .ForMember(dest => dest.CoverImageUrl, opt => opt.MapFrom<CoverImageUrlResolver>());
     }
 }

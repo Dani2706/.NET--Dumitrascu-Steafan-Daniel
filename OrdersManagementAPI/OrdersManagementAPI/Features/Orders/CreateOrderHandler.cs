@@ -26,6 +26,7 @@ public class CreateOrderHandler(
         {
             using (logger.BeginScope("CreateOrderHandler:{operationId}", operationId))
             {
+                logger.LogInformation("OrderCreationStarted");
                 logger.LogInformation(
                     "Title: {Title} '\n' Author: {Author} '\n' + Category: {Category} '\n' ISBN: {ISBN}",
                     request.Title, request.Author, request.Category, request.ISBN
@@ -81,6 +82,10 @@ public class CreateOrderHandler(
         }
         catch (Exception e)
         {
+            if (e is ValidationException)
+            {
+                logger.LogError(e, "OrderCreationFailed");
+            }
             validationTime.Stop();
             dbTime.Stop();
             totalTime.Stop();

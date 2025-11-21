@@ -8,6 +8,6 @@ public class PriceFormatterResolver : IValueResolver<Order, OrderProfileDto, str
 {
     public string Resolve(Order source, OrderProfileDto destination, string destMember, ResolutionContext context)
     {
-        return source.Price.ToString("C2");
+        return destination.Price.ToString("C2");
     }
 }
